@@ -14,6 +14,6 @@ $factory->define(Employee::class, function (Faker $faker) {
             'country' => $faker->country,
             'salary' => $faker->numberBetween($min = 1000, $max = 9000),
             'credit_card_no' => $faker->creditCardNumber,
-            'birth_date' => $faker->date($format = 'Y-m-d', $max = '1996-12-12'),
+            'birth_date' => $faker->date($format = 'Y-m-d', $max = '1995-12-12'),
     ];
 });
