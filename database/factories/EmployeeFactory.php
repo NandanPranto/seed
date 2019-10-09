@@ -9,6 +9,8 @@ $factory->define(Employee::class, function (Faker $faker) {
     return [
           	'name' => $faker->name('male'|'female') ,
             'email' => $faker->companyEmail,
+            'password' => md5('123456'),
+            'role' => $faker->randomElement($array = array ('admin','student','teacher')),
             'address' => $faker->address,
             'city' => $faker->city, 
             'country' => $faker->country,
