@@ -16,11 +16,13 @@
 	    						{{ csrf_field() }}
                             <h3 class="text-center text-info">Login</h3>
                             <div class="form-group">
+
                             	@if(Session::has('msg'))
                             		<div class="alert alert-danger">
                             			<strong>{{ Session::get('msg') }}</strong>
                             		</div>
                             	@endif
+                                
                                 <label for="email" class="text-info">Email:</label><br>
                                 <input type="email" name="email" id="email" class="form-control">
                             </div>
