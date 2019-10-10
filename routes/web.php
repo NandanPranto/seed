@@ -37,6 +37,7 @@ Route::group(['middleware' => 'checkloggedin'], function(){
 
 });
 
+Route::get('products','ProductController@all');
 
 
 
